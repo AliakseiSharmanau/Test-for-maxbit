@@ -1,6 +1,4 @@
----
-jupyter:
- Тестовое задание для Maxbitsolution.
+Тестовое задание для Maxbitsolution.
  На позицию Machine learning engineer.
 
  Цель:
@@ -8,20 +6,20 @@ jupyter:
 -   построить DL модель для классификации состояния дерева
     (Good/Fair/Poor) по данным из NY street tree 2015.
 
-Данные находятся в каталоге - data:
+Данные находятся в каталоге - data на Гугл диске https://drive.google.com/drive/folders/1Zhm0sJyTSZpusPKRnWFRm7jOOF8MiUAk
 
 -   2015-street-tree-census-tree-data.csv - исходный датасет.
 -   train.csv - очищенные данные для тренировки.
 -   test.csv - очищеные данные для проверки модели.
 
-Ноутбуки размещены в каталоге - notebooks:
+Ноутбуки для подготовки и обучения:
 
 -   eda_ny_tree.ipynb - exploratory data analysis и очистка данных.
 -   baseline.ipynb - трансформация данных и модель градиентного бустинга
     из пакета sklearn.
 -   tabnn.ipynb - DL модель на Pytorch.
 
-В папке models - сохраненные данный модели:
+Файлы моделей:
 
 -   tabularnn_model.pth - модель Pytorch.
 -   scaler.pkl и encoder.pkl - данный для предпроцессинга.
