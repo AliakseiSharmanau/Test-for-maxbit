@@ -59,7 +59,7 @@ model.eval()
 # Load preprocessing objects (e.g., scaler, label encoders)
 # Replace with your actual preprocessing objects
 scaler = load(open('scaler.plk', 'rb'))
-label_encoders = load(open('/encoder.plk', 'rb'))
+label_encoders = load(open('encoder.plk', 'rb'))
 enc = {'health': LabelEncoder()}
 enc['health'].classes_ = np.array(['Fair', 'Good', 'Poor'])
 
