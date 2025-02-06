@@ -28,19 +28,21 @@
 
 Запуск.
 Для запуска используется unicorn:
-
+```bash
 uvicorn app:app --reload
-
+```
 Можно протестировать API используя curl или Postman
-
+```
 curl -X POST "http://127.0.0.1:8000/predict" \
 -H "Content-Type: application/json" \
 -d '{"root_stone": "Yes", "root_grade": "No", "root_other": "No", "trunk_wire": "No", "trnk_ligth": "No", "trnk_other": "No", "brch_light": "Yes", "brch_shoe": "No", "brch_other": "No", "curb_loc": "OnCurb", "sidewalk": "Damage", "spc_common":  "honeylocust", "nta": "BK26", "tree_dbh": 15}
-
+```
 Ответ:
+```json
 {
   "prediction": 'Good'
 }
+```
 
 Модель входных данных:
 
